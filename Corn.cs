@@ -14,7 +14,10 @@ public class Corn : MonoBehaviour
  
     public void TakeDamage()
     {
-        health -= 1;
+        if(health > 0)
+        {
+            health -= 1;
+        }
     }
  
 }
